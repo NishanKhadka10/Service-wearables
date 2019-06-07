@@ -7,7 +7,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
 public class Broadcast extends AppCompatActivity {
-    BroadcastExample broadcastExample = new BroadcastExample();
+    BroadcastExample broadcastExample = new BroadcastExample(this);
     @Override
     protected void onStart() {
         super.onStart();
