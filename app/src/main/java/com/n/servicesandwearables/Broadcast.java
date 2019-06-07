@@ -8,7 +8,6 @@ import android.os.Bundle;
 
 public class Broadcast extends AppCompatActivity {
     BroadcastExample broadcastExample = new BroadcastExample();
-
     @Override
     protected void onStart() {
         super.onStart();
