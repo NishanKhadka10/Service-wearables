@@ -15,6 +15,8 @@ import createchannel.CreateChannel;
 public class BroadcastExample extends BroadcastReceiver {
     private NotificationManagerCompat notificationManagerCompat;
     Context context;
+    int id =1;
+
 
     public BroadcastExample(Context context) {
         this.context = context;
@@ -48,7 +50,8 @@ public class BroadcastExample extends BroadcastReceiver {
                 .setCategory(NotificationCompat.CATEGORY_SYSTEM)
                 .build();
 
-        notificationManagerCompat.notify(1,notification);
+        notificationManagerCompat.notify(id,notification);
+        id++;
     }
 
     private void DisplayNotification2(){
@@ -59,6 +62,7 @@ public class BroadcastExample extends BroadcastReceiver {
                 .setCategory(NotificationCompat.CATEGORY_SYSTEM)
                 .build();
 
-        notificationManagerCompat.notify(2,notification);
+        notificationManagerCompat.notify(id,notification);
+        id++;
     }
 }
